@@ -1,4 +1,6 @@
-import 'package:e_commerce/view/splash_screen.dart';
+import 'package:e_commerce/view/address.dart';
+// import 'package:e_commerce/view/delete_address_confirmation.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: Address(),
     );
   }
 }
