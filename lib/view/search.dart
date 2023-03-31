@@ -41,25 +41,6 @@ class _SearchpagState extends State<Searchpag> {
               ),
             ],
           )),
-
-/*class seerchDelegate extends StatelessWidget {
-  const seerchDelegate({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        actions: [
-          IconButton(
-              onPressed: () {
-                showSearch(context: context, delegate: DataSearch());
-              },
-              icon: Icon(Icons.search))
-        ],
-      ),
-    );
-  }
-}*/
     );
   }
 }
