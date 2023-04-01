@@ -17,4 +17,8 @@ class ImgAssets {
   static String womanshoes = '$iconPath/womanshoes.png';
   static String Bikini = '$iconPath/bikini.png';
   static String vector = '$iconPath/bikini.png';
+  static String Shorticon = '$iconPath/Shorticon.png';
+  static String Notfund = '$imgPath/Notfund.PNG';
+  static String Filter = '$iconPath/Filter.png';
+  static String manshirt = '$iconPath/shirt.png';
 }

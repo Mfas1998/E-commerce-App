@@ -37,9 +37,9 @@ Container custome_Container({IconData? icons, String? text, int? num}) {
 
 Container custome_Container2({
   IconData? icons,
-  required String text,
-  required String offer,
-  required String date,
+  String? text = '',
+  String? offer = '',
+  String? date = '',
 }) {
   return Container(
       // color: Colors.red,
@@ -83,9 +83,9 @@ Container custome_Container2({
 
 Container custome_Container_feed({
   String? images,
-  required String text,
-  required String offer,
-  required String date,
+  String? text = '',
+  String? offer = '',
+  String? date = '',
 }) {
   return Container(
       // color: Colors.red,

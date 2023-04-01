@@ -13,7 +13,7 @@ class _NotificaState extends State<Notifica> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: newMethod('Notification', Icons.arrow_back_ios),
+      appBar: custome_appBar(title: 'Notification', icon: Icons.arrow_back_ios),
       body: Container(
         child: Column(
           children: [

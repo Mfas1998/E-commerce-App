@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../core/utils/app_colors.dart';
 
-ElevatedButton custome_Button(String? images) {
+ElevatedButton custome_Button({String? images}) {
   return ElevatedButton(
     style: ElevatedButton.styleFrom(
         minimumSize: Size(30.1, 15.2),

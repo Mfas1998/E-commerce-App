@@ -37,7 +37,7 @@ class _SearchpagState extends State<Searchpag> {
                   width: 250, height: 50, child: custome_head('Nike Air Max')),
               Padding(
                 padding: const EdgeInsets.only(left: 35),
-                child: custome_icon(Icons.h_mobiledata),
+                child: custome_icon(icons: Icons.h_mobiledata),
               ),
             ],
           )),
