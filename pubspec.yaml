@@ -31,6 +31,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  dependencies:
+  syncfusion_flutter_sliders: ^21.1.37
 
 
   # The following adds the Cupertino Icons font to your application.

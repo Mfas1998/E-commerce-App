@@ -27,7 +27,7 @@ class _SearchResultThreeState extends State<SearchResultThree> {
               SizedBox(
                 height: 50,
                 width: 250,
-                child: custome_head('Search Product'),
+                child: CustomeTextFormField('Search Product'),
               ),
               Image.asset(ImgAssets.Shorticon),
               Image.asset(

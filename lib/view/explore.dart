@@ -23,7 +23,7 @@ class ExplorePag extends StatelessWidget {
               SizedBox(
                 height: 50,
                 width: 250,
-                child: custome_head('Search Product'),
+                child: CustomeTextFormField('Search Product'),
               ),
               Icon(
                 Icons.favorite_border,

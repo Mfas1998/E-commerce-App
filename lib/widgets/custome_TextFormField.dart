@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import '../core/utils/app_colors.dart';
 import '../view/search.dart';
 
-class custome_head extends StatefulWidget {
+class CustomeTextFormField extends StatefulWidget {
   String? texthelp;
-  custome_head(this.texthelp);
+  CustomeTextFormField(this.texthelp);
 
   @override
-  State<custome_head> createState() => _custome_headState();
+  State<CustomeTextFormField> createState() => _CustomeTextFormFieldState();
 }
 
-class _custome_headState extends State<custome_head> {
+class _CustomeTextFormFieldState extends State<CustomeTextFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
