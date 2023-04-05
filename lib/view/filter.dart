@@ -26,6 +26,7 @@ class _FilterPagState extends State<FilterPag> {
             width: double.infinity,
             height: 1,
           ),
+          ,
           Container(
               margin: EdgeInsets.only(top: 20, left: 15, right: 10),
               child: Column(
@@ -78,9 +79,13 @@ class _FilterPagState extends State<FilterPag> {
                 ],
               )),
           Container(
-            child: Text(
-              'Condition',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            child: Column(
+              children: [
+                Spec
+                Text(
+                  'Condition',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                )],
             ),
           )
         ],
