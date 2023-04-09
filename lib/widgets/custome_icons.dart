@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
-Icon custome_icon(IconData? icons) {
+Icon custome_icon({IconData? icons, double? size, Color? color}) {
   return Icon(
     icons,
-    size: 40,
+    size: size,
+    color: color,
   );
 }

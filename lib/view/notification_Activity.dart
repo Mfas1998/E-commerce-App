@@ -14,8 +14,8 @@ class NotificationActivity extends StatefulWidget {
 class _NotificationActivityState extends State<NotificationActivity> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold( 
-      appBar: customAppBar( title: 'Activity',icon: Icons.arrow_back_ios ),
+    return Scaffold(
+      appBar: customAppBar(title: 'Activity', icon: Icons.arrow_back_ios),
       body: Container(
         margin: EdgeInsets.only(left: 15),
         child: Column(

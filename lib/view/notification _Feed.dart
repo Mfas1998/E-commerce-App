@@ -16,7 +16,7 @@ class _NotificationFeedState extends State<NotificationFeed> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customAppBar( title: 'Feed',icon: Icons.arrow_back_ios ),
+      appBar: newMethod('Feed', Icons.arrow_back_ios),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

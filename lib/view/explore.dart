@@ -23,7 +23,7 @@ class ExplorePag extends StatelessWidget {
               SizedBox(
                 height: 50,
                 width: 250,
-                child: custome_head('Search Product'),
+                child: CustomeTextFormField('Search Product'),
               ),
               Icon(
                 Icons.favorite_border,
@@ -69,10 +69,10 @@ class ExplorePag extends StatelessWidget {
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        custome_Button(ImgAssets.Skirt.toString()),
-                        custome_Button(ImgAssets.Equipment.toString()),
-                        custome_Button(ImgAssets.TShirt.toString()),
-                        custome_Button(ImgAssets.Shoes.toString()),
+                        custome_Button(images: ImgAssets.Skirt.toString()),
+                        custome_Button(images: ImgAssets.Equipment.toString()),
+                        custome_Button(images: ImgAssets.TShirt.toString()),
+                        custome_Button(images: ImgAssets.Shoes.toString()),
                       ]),
                 ),
                 Row(
@@ -88,10 +88,11 @@ class ExplorePag extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 10),
                   child: Row(children: [
-                    custome_Button(ImgAssets.Pants.toString()),
+                    custome_Button(images: ImgAssets.Pants.toString()),
                     Container(
                         margin: EdgeInsets.only(left: 10),
-                        child: custome_Button(ImgAssets.Underwear.toString())),
+                        child: custome_Button(
+                            images: ImgAssets.Underwear.toString())),
                   ]),
                 ),
                 Row(
@@ -122,10 +123,11 @@ class ExplorePag extends StatelessWidget {
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        custome_Button(ImgAssets.Dress.toString()),
-                        custome_Button(ImgAssets.WomanTShirt.toString()),
-                        custome_Button(ImgAssets.WomanPants.toString()),
-                        custome_Button(ImgAssets.Skirt.toString()),
+                        custome_Button(images: ImgAssets.Dress.toString()),
+                        custome_Button(
+                            images: ImgAssets.WomanTShirt.toString()),
+                        custome_Button(images: ImgAssets.WomanPants.toString()),
+                        custome_Button(images: ImgAssets.Skirt.toString()),
                       ]),
                 ),
                 Row(
@@ -144,10 +146,11 @@ class ExplorePag extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 10),
                   child: Row(children: [
-                    custome_Button(ImgAssets.WomanBag.toString()),
+                    custome_Button(images: ImgAssets.WomanBag.toString()),
                     Container(
                         margin: EdgeInsets.only(left: 10),
-                        child: custome_Button(ImgAssets.Bikini.toString())),
+                        child: custome_Button(
+                            images: ImgAssets.Bikini.toString())),
                   ]),
                 ),
                 Row(
