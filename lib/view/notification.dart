@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/custome_appBar.dart';
+import '../widgets/custom_appBar.dart';
 import '../widgets/custome_continer.dart';
 
 class Notifica extends StatefulWidget {
@@ -13,7 +13,7 @@ class _NotificaState extends State<Notifica> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: newMethod('Notification', Icons.arrow_back_ios),
+      appBar:customAppBar( title: 'Notification',icon: Icons.arrow_back_ios ),
       body: Container(
         child: Column(
           children: [

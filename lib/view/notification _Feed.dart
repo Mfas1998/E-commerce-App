@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../core/utils/assets_manager.dart';
-import '../widgets/custome_appBar.dart';
+import '../widgets/custom_appBar.dart';
 import '../widgets/custome_continer.dart';
 
 class NotificationFeed extends StatefulWidget {
@@ -16,7 +16,7 @@ class _NotificationFeedState extends State<NotificationFeed> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: newMethod('Feed', Icons.arrow_back_ios),
+      appBar: customAppBar( title: 'Feed',icon: Icons.arrow_back_ios ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

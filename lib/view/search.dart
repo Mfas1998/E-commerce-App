@@ -1,6 +1,6 @@
 import 'dart:ffi';
 
-import 'package:dropdownfield2/dropdownfield2.dart';
+// import 'package:dropdownfield2/dropdownfield2.dart';
 
 import 'package:e_commerce/core/utils/app_colors.dart';
 import 'package:flutter/cupertino.dart';
@@ -92,7 +92,7 @@ class DataSearch extends SearchDelegate {
         return InkWell(
           child: Container(
               padding: const EdgeInsets.all(20),
-              color: AppColors.scundryColorOne,
+              color: AppColors.whiteColor,
               child:
                   query == "" ? Text("${name[i]}") : Text("${filternames[i]}")),
         );

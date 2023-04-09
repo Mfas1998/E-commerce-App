@@ -17,7 +17,7 @@ class _custome_headState extends State<custome_head> {
     return TextFormField(
       onChanged: (value) {
         setState(() {
-          selectsours = value;
+         
         });
       },
       decoration: InputDecoration(
@@ -43,21 +43,3 @@ class _custome_headState extends State<custome_head> {
   }
 }
 
-String selectsours = "";
-final souarslecet = TextEditingController();
-List<String> souars = [
-  "الفاتحة",
-  "البقرة",
-  "الاعمران",
-  "النساء",
-  "المائدة",
-  "الانعام",
-  "الاعراف",
-  "الانفال",
-  "التوبة",
-  "يونس",
-  "هود",
-  "يوسف",
-  "الرعد",
-  "ابراهيم",
-];

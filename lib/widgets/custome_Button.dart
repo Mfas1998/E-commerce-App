@@ -6,10 +6,10 @@ ElevatedButton custome_Button(String? images) {
   return ElevatedButton(
     style: ElevatedButton.styleFrom(
         minimumSize: Size(30.1, 15.2),
-        primary: AppColors.scundryColorOne, //background color of button
+        primary: AppColors.grayColor, //background color of button
         side: const BorderSide(
             width: 0.1,
-            color: AppColors.scundryColorTow), //border width and color
+            color: AppColors.grayColor), //border width and color
         elevation: 1, //elevation of button
         shape: RoundedRectangleBorder(
             //to set border radius to button

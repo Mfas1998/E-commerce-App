@@ -13,6 +13,6 @@ Container custome_Text(String? text) {
           child: Text(
         '$text',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 13, color: AppColors.scundryColorTow),
+        style: TextStyle(fontSize: 13, color: AppColors.grayColor),
       )));
 }

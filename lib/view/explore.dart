@@ -28,14 +28,14 @@ class ExplorePag extends StatelessWidget {
               Icon(
                 Icons.favorite_border,
                 size: 35,
-                color: AppColors.scundryColorTow,
+                color: AppColors.grayColor,
                 shadows: [Shadow(offset: Offset.zero)],
               ),
               Stack(children: [
                 Icon(
                   Icons.notifications_none,
                   size: 35,
-                  color: AppColors.scundryColorTow,
+                  color: AppColors.grayColor,
                   shadows: [Shadow(offset: Offset.zero)],
                 ),
                 Container(
@@ -54,7 +54,7 @@ class ExplorePag extends StatelessWidget {
           margin: EdgeInsets.only(top: 20),
           height: 1,
           width: double.infinity,
-          color: AppColors.scundryColorTow,
+          color: AppColors.grayColor,
         ),
         Container(
             margin: EdgeInsets.only(right: 15, left: 15, top: 15),

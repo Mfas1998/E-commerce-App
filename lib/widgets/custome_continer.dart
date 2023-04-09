@@ -70,7 +70,7 @@ Container custome_Container2({
                 width: 300,
                 child: Text(
                   '$offer',
-                  style: TextStyle(color: AppColors.scundryColorTow, height: 2),
+                  style: TextStyle(color: AppColors.grayColor, height: 2),
                 )),
             Text(
               '$date',
@@ -113,7 +113,7 @@ Container custome_Container_feed({
                 width: 260,
                 child: Text(
                   '$offer',
-                  style: TextStyle(color: AppColors.scundryColorTow, height: 2),
+                  style: TextStyle(color: AppColors.grayColor, height: 2),
                 )),
             Text(
               '$date',
