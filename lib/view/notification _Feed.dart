@@ -1,4 +1,6 @@
-import 'package:flutter/foundation.dart';
+
+
+
 import 'package:flutter/material.dart';
 
 import '../core/utils/assets_manager.dart';
@@ -16,7 +18,7 @@ class _NotificationFeedState extends State<NotificationFeed> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: newMethod('Feed', Icons.arrow_back_ios),
+      appBar: customAppBar(title: "Feed",icon: Icons.arrow_back_ios),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

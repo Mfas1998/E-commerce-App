@@ -1,5 +1,5 @@
 import 'package:e_commerce/core/utils/app_colors.dart';
-import 'package:e_commerce/widgets/custome_appBar.dart';
+import 'package:e_commerce/widgets/custom_appBar.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_sliders/sliders.dart';
 
@@ -18,15 +18,15 @@ class _FilterPagState extends State<FilterPag> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:
-          custome_appBar(icon: Icons.arrow_back_ios, title: 'Filter Search'),
+          customAppBar(icon: Icons.arrow_back_ios, title: 'Filter Search'),
       body: Column(
         children: [
           Container(
-            color: AppColors.scundryColorTow,
+            color: AppColors.grayColor,
             width: double.infinity,
             height: 1,
           ),
-          ,
+          
           Container(
               margin: EdgeInsets.only(top: 20, left: 15, right: 10),
               child: Column(
@@ -68,11 +68,11 @@ class _FilterPagState extends State<FilterPag> {
                     children: [
                       Text('MIN',
                           style: TextStyle(
-                              color: AppColors.scundryColorTow,
+                              color: AppColors.grayColor,
                               fontWeight: FontWeight.bold)),
                       Text('MAX',
                           style: TextStyle(
-                              color: AppColors.scundryColorTow,
+                              color: AppColors.grayColor,
                               fontWeight: FontWeight.bold))
                     ],
                   ),
@@ -81,7 +81,7 @@ class _FilterPagState extends State<FilterPag> {
           Container(
             child: Column(
               children: [
-                Spec
+                
                 Text(
                   'Condition',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),

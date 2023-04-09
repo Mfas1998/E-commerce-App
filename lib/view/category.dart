@@ -1,7 +1,7 @@
 import 'package:e_commerce/core/utils/assets_manager.dart';
-import 'package:e_commerce/widgets/custome_appBar.dart';
-import 'package:e_commerce/widgets/custome_continer.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/custom_appBar.dart';
 
 class CategoryPag extends StatefulWidget {
   const CategoryPag({super.key});
@@ -16,7 +16,7 @@ class _CategoryPagState extends State<CategoryPag> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: custome_appBar(icon: Icons.arrow_back_ios, title: 'Category'),
+      appBar: customAppBar(icon: Icons.arrow_back_ios, title: 'Category'),
       body: SingleChildScrollView(
         child: Column(
           children: [

@@ -40,7 +40,7 @@ class _SearchResultThreeState extends State<SearchResultThree> {
           margin: EdgeInsets.only(top: 10),
           width: double.infinity,
           height: 1,
-          color: AppColors.scundryColorTow,
+          color: AppColors.grayColor,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
@@ -49,7 +49,7 @@ class _SearchResultThreeState extends State<SearchResultThree> {
                 margin: EdgeInsets.only(right: 190),
                 child: Text(
                   '0 Result',
-                  style: TextStyle(color: AppColors.scundryColorTow),
+                  style: TextStyle(color: AppColors.grayColor),
                 )),
             Text(
               'Man Shoes',
@@ -57,7 +57,7 @@ class _SearchResultThreeState extends State<SearchResultThree> {
             ),
             custome_icon(
                 icons: Icons.keyboard_arrow_down,
-                color: AppColors.scundryColorTow,
+                color: AppColors.grayColor,
                 size: 30)
           ],
         ),
@@ -78,7 +78,7 @@ class _SearchResultThreeState extends State<SearchResultThree> {
             Text(
               'thank you for shopping using lafyuu',
               style: TextStyle(
-                  fontSize: 10, color: AppColors.scundryColorTow, height: 2),
+                  fontSize: 10, color: AppColors.grayColor, height: 2),
             ),
             SizedBox(
               height: 10,
@@ -90,8 +90,7 @@ class _SearchResultThreeState extends State<SearchResultThree> {
                         AppColors.primaryColor, //background color of button
                     side: const BorderSide(
                         width: 0.1,
-                        color:
-                            AppColors.scundryColorTow), //border width and color
+                        color: AppColors.grayColor), //border width and color
                     elevation: 1, //elevation of button
                     shape: RoundedRectangleBorder(
                         //to set border radius to button
