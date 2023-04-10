@@ -2,6 +2,7 @@ import 'package:e_commerce/view/add_address.dart';
 import 'package:e_commerce/view/address.dart';
 import 'package:e_commerce/view/edit_address.dart';
 import 'package:e_commerce/view/explore.dart';
+import 'package:e_commerce/view/home_screen.dart';
 import 'package:e_commerce/view/notification%20_Feed.dart';
 import 'package:e_commerce/view/notification.dart';
 import 'package:e_commerce/view/notification_Activity.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: EditAddress(),
+      home: HomeScreen(),
     );
   }
 }
