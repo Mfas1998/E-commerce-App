@@ -7,6 +7,7 @@ Container productCard(
     required String title,
     required String description,
     required bool starIcon,
+    required bool deleteIcon,
     required double price,
     required double precentage}) {
   String newPrice = (price - (price * (precentage / 100))).toStringAsFixed(2);
@@ -93,7 +94,7 @@ Container productCard(
                 ),
               ),
               sizeBox(
-                width: 10,
+                width: 8,
               ),
               Text(
                 '${precentage}% Off',
@@ -105,6 +106,14 @@ Container productCard(
                   height: 1.5,
                 ),
               ),
+              if (deleteIcon)
+                Padding(
+                  padding: const EdgeInsets.only(left: 8),
+                  child: Icon(Icons.delete_outlined, size: 20, color: Colors.grey,),
+                ),
+
+                
+            
             ],
           ),
         ],

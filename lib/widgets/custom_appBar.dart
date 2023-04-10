@@ -7,7 +7,7 @@ AppBar customAppBar({required String title, IconData? icon}) {
     centerTitle: true,
     title: Text(
       title,
-      style: const TextStyle(color: AppColors.textColor),
+      style: const TextStyle(color: AppColors.textColor, fontWeight: FontWeight.bold),
     ),
     leading: InkWell(onTap: () {}, child: Icon(icon, color: Colors.black)),
     backgroundColor: AppColors.whiteColor,
