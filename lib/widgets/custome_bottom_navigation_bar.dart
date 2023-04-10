@@ -1,4 +1,3 @@
-
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
@@ -20,9 +19,7 @@ class _BottomBarState extends State<BottomBar> {
       selectedItemColor: Color(0xff40BFFF),
       unselectedItemColor: Color(0xff9098B1),
       onTap: (value) {
-        setState(() {
-          
-        });
+        setState(() {});
         index = value;
       },
       items: [
@@ -60,7 +57,6 @@ class _BottomBarState extends State<BottomBar> {
         ),
       ],
     );
-;
   }
 }
 // class BottomBar extends StatelessWidget {
