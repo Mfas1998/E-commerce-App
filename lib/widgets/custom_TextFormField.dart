@@ -1,7 +1,7 @@
 import 'package:e_commerce/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
-Container custom_TextFormField({required String label}) => Container(
+Container custom_TextFormField({required String label,String? hintText}) => Container(
     padding: const EdgeInsets.all(12),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -18,6 +18,7 @@ Container custom_TextFormField({required String label}) => Container(
         ),
         TextFormField(
           decoration: InputDecoration(
+            hintText: hintText,
             enabledBorder: OutlineInputBorder(
               borderSide: const BorderSide(color: AppColors.grayColor),
               borderRadius: BorderRadius.circular(10),
