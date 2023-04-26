@@ -4,11 +4,10 @@ import '../core/utils/app_colors.dart';
 
 InkWell customButton({
   required String text,
+   onPressed()?,
 }) =>
     InkWell(
-      onTap: () {
-
-      },
+      onTap:onPressed ,
       child: Container(
           decoration: BoxDecoration(
               color: AppColors.primaryColor,

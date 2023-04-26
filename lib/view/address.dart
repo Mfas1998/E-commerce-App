@@ -1,3 +1,4 @@
+import 'package:e_commerce/view/add_address.dart';
 import 'package:e_commerce/widgets/custom_appBar.dart';
 import 'package:e_commerce/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
@@ -39,7 +40,13 @@ class _AddressState extends State<Address> {
                 address:
                     "address address address address address address address address address address address address",
                 phone: "967738151341"),
-            customButton(text: "Add Address"),
+            customButton(
+              text: "Add Address",
+              onPressed: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const AddAddress()));
+              },
+            ),
           ],
         ),
       ),

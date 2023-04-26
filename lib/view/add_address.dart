@@ -39,12 +39,12 @@ class _AddAddressState extends State<AddAddress> {
               customButton(
                 text: "Add Address",
               ),
-              IconButton(
-                  onPressed: () {
-                    if (formState.currentState!.validate()) ;
+              // IconButton(
+              //     onPressed: () {
+              //       if (formState.currentState!.validate()) ;
                     
-                  },
-                  icon: Icon(Icons.add))
+              //     },
+              //     icon: Icon(Icons.add))
             ],
           ),
         ),
