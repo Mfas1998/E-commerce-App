@@ -1,9 +1,14 @@
-import 'package:flutter/material.dart';
 
+import 'package:flutter/material.dart';
 import '../core/utils/app_colors.dart';
 
-InkWell customButton({required String text}) => InkWell(
-      onTap: () {},
+InkWell customButton({
+  required String text,
+}) =>
+    InkWell(
+      onTap: () {
+
+      },
       child: Container(
           decoration: BoxDecoration(
               color: AppColors.primaryColor,
@@ -20,3 +25,4 @@ InkWell customButton({required String text}) => InkWell(
             ),
           )),
     );
+

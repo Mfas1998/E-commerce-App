@@ -1,6 +1,6 @@
 import 'package:e_commerce/core/utils/app_colors.dart';
-import 'package:e_commerce/register.dart';
 import 'package:e_commerce/view/home_screen.dart';
+import 'package:e_commerce/view/register.dart';
 import 'package:e_commerce/widgets/custome_size_box.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
