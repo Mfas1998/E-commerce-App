@@ -16,7 +16,7 @@ Container productCard(
     height: 238,
     decoration: BoxDecoration(
       border: Border.all(
-        color: Color(0xffEBF0FF),
+        color: const Color(0xffEBF0FF),
       ),
       // color: Color.fromARGB(255, 224, 158, 111),
       borderRadius: BorderRadius.circular(5),
@@ -56,7 +56,8 @@ Container productCard(
               children: List.generate(
                   5,
                   (index) => Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 2, vertical: 3),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 2, vertical: 3),
                         child: Icon(
                           Icons.star,
                           size: 12,
@@ -64,7 +65,7 @@ Container productCard(
                         ),
                       )),
             ),
-            sizeBox(
+          sizeBox(
             height: 8,
           ),
           Text(
@@ -109,11 +110,12 @@ Container productCard(
               if (deleteIcon)
                 Padding(
                   padding: const EdgeInsets.only(left: 8),
-                  child: Icon(Icons.delete_outlined, size: 20, color: Colors.grey,),
+                  child: Icon(
+                    Icons.delete_outlined,
+                    size: 20,
+                    color: Colors.grey,
+                  ),
                 ),
-
-                
-            
             ],
           ),
         ],

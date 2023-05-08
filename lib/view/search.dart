@@ -29,7 +29,7 @@ class _SearchpagState extends State<Searchpag> {
               icon: Icon(Icons.search))
         ],
       ),
-      body: Container(
+      /* Container(
           margin: EdgeInsets.only(top: 50, left: 20),
           child: Row(
             children: [
@@ -42,7 +42,7 @@ class _SearchpagState extends State<Searchpag> {
                 child: custome_icon(icons: Icons.h_mobiledata),
               ),
             ],
-          )),
+          ))*/
     );
   }
 }

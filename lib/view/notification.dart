@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../widgets/custom_appBar.dart';
 import '../widgets/custome_continer.dart';
 
-class Notifica extends StatefulWidget {
-  const Notifica({super.key});
+class NotificationPag extends StatefulWidget {
+  const NotificationPag({super.key});
 
   @override
-  State<Notifica> createState() => _NotificaState();
+  State<NotificationPag> createState() => _NotificationPagState();
 }
 
-class _NotificaState extends State<Notifica> {
+class _NotificationPagState extends State<NotificationPag> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:customAppBar( title: 'Notification',icon: Icons.arrow_back_ios ),
+      appBar: customAppBar(title: 'Notification', icon: Icons.arrow_back_ios),
       body: Container(
         child: Column(
           children: [
@@ -22,14 +23,29 @@ class _NotificaState extends State<Notifica> {
               child: Column(
                 // mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  custome_Container(
-                    icons: Icons.local_offer,
-                    text: 'Offer',
-                    num: 2,
+                  InkWell(
+                    onTap: () {
+                      Get.toNamed("/notificationOffer");
+                    },
+                    child: custome_Container(
+                      icons: Icons.local_offer,
+                      text: 'Offer',
+                      num: 2,
+                    ),
                   ),
-                  custome_Container(icons: Icons.article, text: 'Feed', num: 3),
-                  custome_Container(
-                      icons: Icons.notifications, text: '   Acivity', num: 3),
+                  InkWell(
+                      onTap: () {
+                        Get.toNamed("/notificationOfeed");
+                      },
+                      child: custome_Container(
+                          icons: Icons.article, text: 'Feed', num: 3)),
+                  InkWell(
+                    onTap: () {
+                      Get.toNamed("/Notificationactivity");
+                    },
+                    child: custome_Container(
+                        icons: Icons.notifications, text: '  Acivity', num: 3),
+                  ),
                 ],
               ),
             )

@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
@@ -28,6 +29,12 @@ class _BottomBarState extends State<BottomBar> {
           label: 'Home',
         ),
         BottomNavigationBarItem(
+          activeIcon: widget,
+          /* activeIcon: InkWell(
+            onTap: () {
+              // Get.toNamed("/Explorepag");
+            
+          ),*/
           icon: Icon(Icons.search),
           label: 'Explore',
         ),
