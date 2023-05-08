@@ -6,7 +6,7 @@ import 'package:e_commerce/view/payment.dart';
 import 'package:e_commerce/view/notification.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'login.dart';
+
 import 'view/ShortBy.dart';
 import 'view/category.dart';
 import 'view/explore.dart';

@@ -1,3 +1,4 @@
+import 'dart:js';
 
 import 'package:e_commerce/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
@@ -7,9 +8,16 @@ AppBar customAppBar({required String title, IconData? icon}) {
     centerTitle: true,
     title: Text(
       title,
-      style: const TextStyle(color: AppColors.textColor, fontWeight: FontWeight.bold),
+      style: const TextStyle(
+          color: AppColors.textColor, fontWeight: FontWeight.bold),
     ),
-    leading: InkWell(onTap: () {}, child: Icon(icon, color: Colors.black)),
+    leading: IconButton(
+        onPressed: () {
+         
+         
+        },
+        icon: Icon(icon),
+        color: AppColors.textColor),
     backgroundColor: AppColors.whiteColor,
   );
 }

@@ -1,5 +1,6 @@
-import 'package:e_commerce/login.dart';
+
 import 'package:e_commerce/view/home_screen.dart';
+import 'package:e_commerce/view/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/material/icons.dart';
 import '../core/utils/app_colors.dart';
