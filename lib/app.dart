@@ -1,3 +1,4 @@
+import 'package:e_commerce/view/add_address.dart';
 import 'package:e_commerce/view/add_card.dart';
 import 'package:e_commerce/view/favorite_screen.dart';
 import 'package:e_commerce/view/filter.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
             name: "/Notificationactivity",
             page: (() => NotificationActivity())),
         GetPage(name: "/Explorepag", page: (() => ExplorePag())),
-        GetPage(name: "/pagName", page: (() => NotificationOffer())),
+        GetPage(name: "/addAddress", page: (() => AddAddress())),
         GetPage(name: "/pagName", page: (() => NotificationOffer())),
         GetPage(name: "/pagName", page: (() => NotificationOffer())),
         GetPage(name: "/pagName", page: (() => NotificationOffer())),

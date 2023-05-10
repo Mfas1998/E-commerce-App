@@ -2,6 +2,7 @@ import 'package:e_commerce/view/add_address.dart';
 import 'package:e_commerce/widgets/custom_appBar.dart';
 import 'package:e_commerce/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../widgets/custom_container.dart';
 
 class Address extends StatefulWidget {
@@ -43,8 +44,7 @@ class _AddressState extends State<Address> {
             customButton(
               text: "Add Address",
               onPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const AddAddress()));
+                Get.toNamed("/addAddress");
               },
             ),
           ],
