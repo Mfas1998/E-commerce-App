@@ -17,6 +17,7 @@ class _AddCardState extends State<AddCard> {
       resizeToAvoidBottomInset: false,
       appBar: customAppBar(title: "Add Card", icon: Icons.arrow_back_ios),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           custom_TextFormField(
               label: "Card Number", hintText: "Enter Card Number"),

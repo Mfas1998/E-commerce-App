@@ -12,12 +12,7 @@ AppBar customAppBar({required String title, IconData? icon}) {
           color: AppColors.textColor, fontWeight: FontWeight.bold),
     ),
     leading: IconButton(
-        onPressed: () {
-         
-         
-        },
-        icon: Icon(icon),
-        color: AppColors.textColor),
+        onPressed: () {}, icon: Icon(icon), color: AppColors.textColor),
     backgroundColor: AppColors.whiteColor,
   );
 }

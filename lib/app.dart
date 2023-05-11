@@ -4,7 +4,7 @@ import 'package:e_commerce/view/favorite_screen.dart';
 import 'package:e_commerce/view/filter.dart';
 import 'package:e_commerce/view/home_layout.dart';
 import 'package:e_commerce/view/home_screen.dart';
-import 'package:e_commerce/view/payment.dart';
+import 'package:e_commerce/view/payments.dart';
 import 'package:e_commerce/view/notification.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
