@@ -1,15 +1,18 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../models/category_data.dart';
 import '../models/product_ data.dart';
-import '../widgets/custome_bottom_navigation_bar.dart';
 import '../widgets/custome_category_card.dart';
 import '../widgets/custome_page_view.dart';
 import '../widgets/custome_product_card.dart';
 import '../widgets/custome_recomended_product.dart';
 import '../widgets/custome_sections.dart';
 import '../widgets/custome_size_box.dart';
+import 'favorite_screen.dart';
+import 'notification.dart';
+import 'product_detail.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -53,7 +56,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-                Icon(Icons.favorite_border_outlined,color:Color(0xff9098B1),), // ),
+                InkWell(
+                    onTap: (() => Get.to(FavoriteScreen())),
+                    child: Icon(
+                      Icons.favorite_border_outlined,
+                      color: Color(0xff9098B1),
+                    )), // ),
                 Badge(
                   badgeContent: Text(
                     '3',
@@ -63,8 +71,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   child: InkWell(
-                    onTap: (() => {}),
-                    child: Icon(Icons.notification_add_outlined,color:Color(0xff9098B1),),
+                    onTap: (() => Get.to(NotificationPag())),
+                    child: Icon(
+                      Icons.notification_add_outlined,
+                      color: Color(0xff9098B1),
+                    ),
                   ),
                 ),
                 sizeBox(
@@ -96,9 +107,15 @@ class _HomeScreenState extends State<HomeScreen> {
               child: ListView(
                 children: categoryData
                     .map(
-                      (e) => Padding(
-                        padding: const EdgeInsets.only(right: 12),
-                        child: categoryCard(title: e.title, iconUrl: e.iconUrl),
+                      (e) => InkWell(
+                        onTap: (() => Get.to(
+                              ProductDetail(),
+                            )),
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 12),
+                          child:
+                              categoryCard(title: e.title, iconUrl: e.iconUrl),
+                        ),
                       ),
                     )
                     .toList(),
@@ -117,16 +134,21 @@ class _HomeScreenState extends State<HomeScreen> {
               child: ListView(
                 children: flashSale
                     .map(
-                      (e) => Padding(
-                        padding: const EdgeInsets.only(right: 12),
-                        child: productCard(
-                          imageUrl: e.imageUrl,
-                          title: e.title,
-                          description: e.description,
-                          starIcon: false,
-                          deleteIcon: false,
-                          price: e.price,
-                          precentage: e.precentage,
+                      (e) => InkWell(
+                        onTap: (() => Get.to(
+                              ProductDetail(),
+                            )),
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 12),
+                          child: productCard(
+                            imageUrl: e.imageUrl,
+                            title: e.title,
+                            description: e.description,
+                            starIcon: false,
+                            deleteIcon: false,
+                            price: e.price,
+                            precentage: e.precentage,
+                          ),
                         ),
                       ),
                     )
@@ -144,16 +166,21 @@ class _HomeScreenState extends State<HomeScreen> {
               child: ListView(
                 children: megaSale
                     .map(
-                      (e) => Padding(
-                        padding: const EdgeInsets.only(right: 12),
-                        child: productCard(
-                          imageUrl: e.imageUrl,
-                          title: e.title,
-                          description: e.description,
-                          starIcon: false,
-                          deleteIcon: false,
-                          price: e.price,
-                          precentage: e.precentage,
+                      (e) => InkWell(
+                        onTap: (() => Get.to(
+                              ProductDetail(),
+                            )),
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 12),
+                          child: productCard(
+                            imageUrl: e.imageUrl,
+                            title: e.title,
+                            description: e.description,
+                            starIcon: false,
+                            deleteIcon: false,
+                            price: e.price,
+                            precentage: e.precentage,
+                          ),
                         ),
                       ),
                     )
@@ -176,14 +203,19 @@ class _HomeScreenState extends State<HomeScreen> {
               shrinkWrap: true,
               children: flashSale
                   .map(
-                    (e) => productCard(
-                      imageUrl: e.imageUrl,
-                      title: e.title,
-                      description: e.description,
-                      starIcon: true,
-                      deleteIcon: false,
-                      price: e.price,
-                      precentage: e.precentage,
+                    (e) => InkWell(
+                      onTap: (() => Get.to(
+                            ProductDetail(),
+                          )),
+                      child: productCard(
+                        imageUrl: e.imageUrl,
+                        title: e.title,
+                        description: e.description,
+                        starIcon: true,
+                        deleteIcon: false,
+                        price: e.price,
+                        precentage: e.precentage,
+                      ),
                     ),
                   )
                   .toList(),
@@ -202,7 +234,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomBar(),
+      // bottomNavigationBar: BottomBar(),
     );
   }
 }

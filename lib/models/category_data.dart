@@ -5,7 +5,7 @@ class CategoryData {
   const CategoryData({required this.title, required this.iconUrl});
 }
 
-const categoryData = [
+const List<CategoryData> categoryData = [
   CategoryData(
     title: 'Man Shirt',
     iconUrl: 'assets/icons/shirt.png',

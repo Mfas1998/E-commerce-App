@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 Row sectionTitle({required String name, required String seeMore}) => Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -10,12 +11,14 @@ Row sectionTitle({required String name, required String seeMore}) => Row(
             fontWeight: FontWeight.bold,
           ),
         ),
-        Text(
-          seeMore,
-          style: TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.bold,
-            color: Color(0xff40BFFF),
+        InkWell(
+          child: Text(
+            seeMore,
+            style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
+              color: Color(0xff40BFFF),
+            ),
           ),
         ),
       ],

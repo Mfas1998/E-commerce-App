@@ -1,9 +1,10 @@
 import 'package:e_commerce/core/utils/app_colors.dart';
-import 'package:e_commerce/register.dart';
+import 'package:e_commerce/view/login.dart';
+// import 'package:e_commerce/register.dart';
 //import 'package:e_commerce/view/register.dart';
 import 'package:flutter/material.dart';
 
-import 'login.dart';
+// import 'login.dart';
 
 class Splash_Screen extends StatefulWidget {
   const Splash_Screen({super.key});

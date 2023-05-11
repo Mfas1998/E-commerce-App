@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/get_core.dart';
+
+import '../models/product_ data.dart';
+import '../widgets/custome_page_view.dart';
+import '../widgets/custome_product_card.dart';
 
 class ProductDetail extends StatefulWidget {
   const ProductDetail({super.key});
@@ -13,7 +18,8 @@ class _ProductDetailState extends State<ProductDetail> {
     double screenSize = 360; //610
     double screenWidth = MediaQuery.of(context).size.width / screenSize;
     double screenHeight = screenWidth * 0.97;
-
+    //  final  List<ProductData> p = Get.log.a); // as Map<String, Sgtring>;
+    // final name = p['title'];
     return Scaffold(
       body: SafeArea(
         child: ListView(
@@ -728,7 +734,63 @@ class _ProductDetailState extends State<ProductDetail> {
                               ),
                             ),
                           ),
-                          Container(
+                         productCard(
+                            imageUrl:'assets/images/bag.png',
+                            title: 'FS - QUILTED',
+                            description: 'MAXI CROS...',
+                            starIcon: false,
+                            deleteIcon: false,
+                            price: 534.33,
+                            precentage: 24,
+                          ),
+                          
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Positioned(
+              left: 16 * screenWidth,
+              top: 16 * screenWidth,
+              child: Container(
+                width: 343 * screenWidth,
+                height: 57 * screenWidth,
+                decoration: BoxDecoration(
+                  color: Color(0xff40bfff),
+                  borderRadius: BorderRadius.circular(5 * screenWidth),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Color(0x3d40bfff),
+                      offset: Offset(0 * screenWidth, 10 * screenWidth),
+                      blurRadius: 15 * screenWidth,
+                    ),
+                  ],
+                ),
+                child: Center(
+                  child: Text(
+                    'Add To Cart',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 14 * screenHeight,
+                      fontWeight: FontWeight.w700,
+                      height: 1.7999999183 * screenHeight / screenWidth,
+                      letterSpacing: 0.5 * screenWidth,
+                      color: Color(0xffffffff),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+/*
+  /*Container(
                             width: double.infinity,
                             height: 238 * screenWidth,
                             decoration: BoxDecoration(
@@ -879,48 +941,7 @@ class _ProductDetailState extends State<ProductDetail> {
                               ],
                             ),
                           ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Positioned(
-              left: 16 * screenWidth,
-              top: 16 * screenWidth,
-              child: Container(
-                width: 343 * screenWidth,
-                height: 57 * screenWidth,
-                decoration: BoxDecoration(
-                  color: Color(0xff40bfff),
-                  borderRadius: BorderRadius.circular(5 * screenWidth),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0x3d40bfff),
-                      offset: Offset(0 * screenWidth, 10 * screenWidth),
-                      blurRadius: 15 * screenWidth,
-                    ),
-                  ],
-                ),
-                child: Center(
-                  child: Text(
-                    'Add To Cart',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 14 * screenHeight,
-                      fontWeight: FontWeight.w700,
-                      height: 1.7999999183 * screenHeight / screenWidth,
-                      letterSpacing: 0.5 * screenWidth,
-                      color: Color(0xffffffff),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+                        */
+                          
+                         
+*/

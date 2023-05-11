@@ -2,6 +2,7 @@ import 'package:e_commerce/view/add_address.dart';
 import 'package:e_commerce/view/add_card.dart';
 import 'package:e_commerce/view/favorite_screen.dart';
 import 'package:e_commerce/view/filter.dart';
+import 'package:e_commerce/view/home_layout.dart';
 import 'package:e_commerce/view/home_screen.dart';
 import 'package:e_commerce/view/payment.dart';
 import 'package:e_commerce/view/notification.dart';
@@ -25,13 +26,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: HomeLayout(),
       getPages: [
         GetPage(name: "/notificationOffer", page: (() => NotificationOffer())),
         GetPage(name: "/notificationOfeed", page: (() => NotificationFeed())),
-        GetPage(
-            name: "/Notificationactivity",
-            page: (() => NotificationActivity())),
+        GetPage(name: "/Notificationactivity", page: (() => NotificationActivity())),
         GetPage(name: "/Explorepag", page: (() => ExplorePag())),
         GetPage(name: "/addAddress", page: (() => AddAddress())),
         GetPage(name: "/pagName", page: (() => NotificationOffer())),

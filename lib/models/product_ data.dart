@@ -39,7 +39,7 @@ const flashSale = [
   ),
 ];
 
-const megaSale = [
+const List<ProductData> megaSale = [
   ProductData(
     imageUrl: 'assets/images/red_bag.png',
     title: 'MS - Nike Air',
