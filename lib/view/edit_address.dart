@@ -2,7 +2,7 @@ import 'package:e_commerce/core/utils/app_colors.dart';
 import 'package:e_commerce/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
-import '../widgets/custom_TextFormField.dart';
+import '../widgets/custom_text_form_field.dart';
 import '../widgets/custom_appBar.dart';
 import '../widgets/custom_button.dart';
 
